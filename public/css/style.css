@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
 body{
     background-color: #666;
     font-family: 'Roboto', sans-serif;
@@ -12,6 +17,9 @@ main{
     margin:5%;
     background-color: #ebebeb;
     padding-bottom: 20px;
+}
+.logo{
+    margin: 30px;
 }
 h2{
     font-size: 24px;
@@ -38,12 +46,23 @@ li{
     font-weight: bold;
     margin-top: 0%;
 }
+.search-bar{
+    margin: 20px;
+}
 .busqueda, .button, i{
     background-color: whitesmoke;
     border-radius: 5%;
 }
+.hand{
+    text-align: center;
+}
 #hand, #card, #signIn, #shopping{
     background-color: #EAC926;
+}
+
+.site, .login-nav{
+    margin: 20px;
+    display:none;
 }
 .burger-menu{
     background-color:  #1259c3;
@@ -60,22 +79,22 @@ li{
     margin-left: 20%;
     margin-top: 10px;
     text-align: center;
-
 }
 .detalles-producto{
     border-top: solid 1px #ebebeb;
     text-align: left;
     padding: 15px;
-
 }
 .fa-truck-moving{
     color: #39b54a;
     padding: 10px;
     border:solid 1px #39b54a;
     border-radius: 50%;
-    
 }
 
+.product{
+    display: none;
+}
 footer{
     background-color: white;
 }
@@ -90,4 +109,39 @@ footer{
     text-align: center;
     font-weight: bold;
     padding:1%;
+}
+
+/*  ****MEDIA QUERIES****   */
+/* VERSION TABLET */
+@media (min-width:360px) {
+    .product{
+        display: block;
+    }
+    .contenedor-producto{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    .site, .login-nav{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+
+}
+
+/*VERSION DESKTOP */
+@media (min-width: 769px){
+    .product{
+        display: block;
+    }
+    .contenedor-producto{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    .site, .login-nav{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+
 }
