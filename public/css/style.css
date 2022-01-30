@@ -44,15 +44,16 @@ header{
     border-color: transparent;
     border-radius: 5px;
 }
-
+.banner{
+    
+}
 main{
     margin:auto;
     background-color: #ebebeb;
-    padding-bottom: 10%;
+    padding-bottom: 15px;
 }
 h2{
     font-size: 14px; 
-    
 }
 a{
     text-decoration: none;
@@ -97,6 +98,9 @@ li{
     text-align: center;
     padding:4px;
     color:white;
+}
+.ofertas{
+    margin-left:4%;
 }
 
 .producto{
@@ -158,6 +162,8 @@ footer{
     }
     .producto{
         box-shadow: 0px 0px 10px rgb(100,100,100);
+        width: 50%;
+        margin:5%;
     }
     .site, .login-nav{
         display: block;
@@ -174,7 +180,9 @@ footer{
         display: flex;
         justify-content: start
     }
-
+    nav {
+        margin: 1%;
+    }
    nav, .site, .login-nav{
        display: flex;
        justify-content: space-between;
@@ -189,27 +197,38 @@ footer{
     #hand, #card, #signIn, #shopping{
         padding-left: 0%;
     }
-   main{
-       padding-bottom: 5px;
-   }
+    .h2-compra{
+        margin-right: 2%;
+    }
    .hand{
        font-size: 12px;
        margin: 0;
    }
+   .ofertas{
+        margin-left:4%;
+       font-size: 22px;
+    }
+    .contenedor-productos{
+        display: flex;
+        flex-direction: column;
+    }
+    .productos-1-2, .productos-3-4{
+        display: flex;
+        align-items: center;
+    }
+    .price-off{
+        display: flex;
+        justify-content: space-between;
+    }
+    .off{
+        font-size: 14px;
+        margin-left: 25%;
+    }
 
 }
 
 /*VERSION DESKTOP */
 @media (min-width: 769px){
-    .contenedor-productos{
-        display: flex;
-    }
-    .nombre-producto{
-        display: block;
-    }
-    .producto{
-        box-shadow: 0px 0px 10px rgb(100,100,100);
-    }
     .site, .login-nav{
         display: block;
     }
@@ -218,7 +237,7 @@ footer{
     }
     .encabezado{
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
     }
     .logo-barra{
@@ -231,11 +250,43 @@ footer{
        display: flex;
        justify-content: space-between;
    }
-   a {
+   .hand{
+       font-size: 18px;
+   }
+    a {
     font-size: 16px;
     margin:6px;
-   }
+    }
     #hand, #card, #signIn, #shopping{
         padding-left: 5px;
     } 
+    .h2-compra{
+        margin-right: 4%;
+    }
+    .ofertas{
+        margin-left:4%;
+        font-size: 22px;
+    }
+    
+    .nombre-producto{
+        display: block;
+    }
+    .producto{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    .contenedor-productos{
+        display: flex;
+        flex-direction: row;
+    }
+    .detalles-producto{
+        display: flex;
+        flex-direction: column;
+    }
+    .off{
+        font-size: 14px;
+        margin-left: 35%;
+    }
+    .truck-container{
+        position: absolute;
+    }
 }
