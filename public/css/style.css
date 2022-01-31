@@ -44,9 +44,7 @@ header{
     border-color: transparent;
     border-radius: 5px;
 }
-.banner{
-    
-}
+
 main{
     margin:auto;
     background-color: #ebebeb;
@@ -224,7 +222,20 @@ footer{
         font-size: 14px;
         margin-left: 25%;
     }
-
+    .truck-container{
+        font-size: 12px;
+        width: 25px;
+        height: 25px;
+        
+    }
+    #truck1, #truck3{
+        position: absolute;
+        left: 35%;
+    }
+    #truck2, #truck4{
+        position: absolute;
+        right: 10%;
+    }
 }
 
 /*VERSION DESKTOP */
@@ -286,7 +297,16 @@ footer{
         font-size: 14px;
         margin-left: 35%;
     }
-    .truck-container{
-        position: absolute;
+    #truck1{
+        left:18%;
+    }
+    #truck2{
+        left: 43%;
+    }
+    #truck3{
+        left:68%;
+    }
+    #truck4{
+        left: 93%;
     }
 }
