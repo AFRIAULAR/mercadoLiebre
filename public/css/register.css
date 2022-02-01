@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 12px;
+}
+
+form{
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+}
+span{
+    padding: 6px;
+}
+.user-profile-title{
+    display: flex;
+    flex-direction: column;
+}
+.user-profile-radio{
+    display: flex;
+    padding: 5px;
+    margin: auto;
+    align-items: center;
+}
+.interest-container{
+    display: flex; 
+}
+.interest-checkbox{
+    padding: 5px;
+}
