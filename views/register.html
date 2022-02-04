@@ -12,10 +12,10 @@
     <main>
         <form action="/register" method="POST">
             <label for="name">
-                <input type="text" name="name" placeholder="Nombre y Apellido">
+                <input type="text" name="name" placeholder="Nombre y Apellido" required minlength="8" >
             </label>
             <label for="userName">
-                <input type="text" name="userName" placeholder="Nombre de usuario">
+                <input type="text" name="userName" placeholder="Nombre de usuario" min="4" required>
             </label>
             <div class="dob-container">
                 <label for="dob" class="dob-title">Fecha de nacimiento:
@@ -52,6 +52,16 @@
                     </div>
                 </label>
             </div>
+            <label for="photo"><span>Suba su foto de perfil acá</span>
+                <input type="file"></input>
+            </label>
+            <label for="password">
+                <input type="password" minlength="8" name="password" placeholder="Introduzca su contraseña" required>
+            </label>
+            <label for="password">
+                <input type="password" minlength="8" name="password" placeholder="Confirma contraseña" required>
+            </label>
+            <button type="submit" class="submit-register">Enviar</button>
         </form>
     </main>
 </body>
