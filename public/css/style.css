@@ -313,3 +313,30 @@ footer{
         display: flex;
     }
 }
+
+/*  *****ESTILOS DE PAGINA LOGIN*****    */
+.body-login{
+    background-color: #ebebeb;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+    align-items: center;
+}
+.login-user, .password{
+    border: transparent;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 15px;
+    padding: 5px;
+
+}
+.submit-login{
+    background-color: #1259c3;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    margin: 15px;
+    padding: 5px 100px;
+}
