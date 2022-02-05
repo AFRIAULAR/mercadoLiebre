@@ -340,3 +340,16 @@ footer{
     margin: 15px;
     padding: 5px 100px;
 }
+
+/*    *****ESTILOS PAGINA REGISTER*****    */
+.body-register{
+    background-color: #ebebeb;
+}
+main{
+    margin:5%;
+    max-width: 250px;
+}
+#form-register{
+    padding-bottom: 5px;
+    margin: 5px;
+}
