@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-app.listen(8000, ()=> console.log("Servidor corriendo"));
+app.listen(process.env.PORT || 3000, ()=> console.log("Servidor corriendo"));
 
 const path = require('path');
 const publicPath = path.resolve(__dirname, './public');
